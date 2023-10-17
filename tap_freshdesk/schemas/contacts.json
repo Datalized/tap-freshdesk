@@ -74,17 +74,20 @@
         ]
       },  
       "custom_fields": {
-        "type": ["null", "array", "object"],
-        "items": {
-          "type": ["null", "object"],
-          "properties": {
-            "name": {
-              "type": ["null", "string"]
-            },
-            "value": {
-              "type": ["null", "string"]
-            }
-          }
+        "type": ["null", "object"],
+        "properties": {
+          "identifier": {"type": ["null", "string"]},
+          "negocio": {"type": ["null", "string"]},
+          "username": {"type": ["null", "string"]},
+          "rut": {"type": ["null", "string"]},
+          "manager_id": {"type": ["null", "string"]},
+          "tipo_usuario": {"type": ["null", "string"]},
+          "rankmi_internal": {"type": ["null", "string"]},
+          "subdominio": {"type": ["null", "string"]},
+          "company_value": {"type": ["null", "string"]},
+          "fecha_nacimiento": {"type": ["null", "string"], "format":"date-time"},
+          "lang": {"type": ["null", "string"]},
+          "personal_email": {"type": ["null", "string"]}
         }
       },
       "facebook_id": {
@@ -107,6 +110,11 @@
         ], 
         "format": "date-time"
       },
+      "csat_rating": {"type": ["null", "string"]},
+      "preferred_source": {"type": ["null", "string"]},
+      "unique_external_id": {"type": ["null", "string"]},
+      "twitter_profile_status": {"type": ["null", "string"]},
+      "twitter_followers_count": {"type": ["null", "string"]},
       "company_id": {
         "type":  [
           "null",
