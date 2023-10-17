@@ -2,17 +2,36 @@
     "type": "object",
     "properties": {
       "custom_fields": {
-        "type": ["null", "array", "object"],
-        "items": {
-          "type": ["null", "object"],
-          "properties": {
-            "name": {
-              "type": ["null", "string"]
-            },
-            "value": {
-              "type": ["null", "string"]
-            }
-          }
+        "type": ["null", "object"],
+        "properties": {
+          "cf_etapa_lanzamiento": {"type": ["null", "string"]},
+          "cf_ola_lanzamiento": {"type": ["null", "string"]},
+          "cf_tipo": {"type": ["null", "string"]},
+          "cf_id_del_proceso_si_desempeo_talento_o_clima": {"type": ["null", "string"]},
+          "cf_fsm_contact_name": {"type": ["null", "string"]},
+          "cf_fsm_phone_number": {"type": ["null", "string"]},
+          "cf_fsm_service_location": {"type": ["null", "string"]},
+          "cf_fsm_appointment_start_time": {"type": ["null", "string"], "format":"date-time"},
+          "cf_fsm_appointment_end_time": {"type": ["null", "string"], "format":"date-time"},
+          "cf_segmento_cliente": {"type": ["null", "string"]},
+          "cf_suite": {"type": ["null", "string"]},
+          "cf_bloqueante": {"type": ["null", "string"]},
+          "cf_cliente_falabella383783": {"type": ["null", "string"]},
+          "cf_negocio486170": {"type": ["null", "string"]},
+          "cf_tipo_proceso": {"type": ["null", "string"]},
+          "cf_producto326847": {"type": ["null", "string"]},
+          "cf_id_youtrack": {"type": ["null", "number"]},
+          "cf_autogestin": {"type": ["null", "string"]},
+          "cf_etapa685013": {"type": ["null", "string"]},
+          "cf_gestin": {"type": ["null", "string"]},
+          "cf_csm": {"type": ["null", "string"]},
+          "cf_complejidad": {"type": ["null", "string"]},
+          "cf_empresa": {"type": ["null", "string"]},
+          "cf_multigestin": {"type": ["null", "string"]},
+          "cf_funcionalidad": {"type": ["null", "string"]},
+          "cf_tckt_gestionado_con_error": {"type": ["null", "string"]},
+          "cf_tipo_de_error": {"type": ["null", "string"]},
+          "cf_rand106960": {"type": ["null", "string"]}
         }
       },
       "cc_emails": {
@@ -395,6 +414,18 @@
             ]
           }
         }
+      },
+      "internal_agent_id": {
+        "type": ["null", "integer"]
+      },
+      "internal_group_id": {
+        "type": ["null", "integer"]
+      },
+      "nr_due_by": {
+        "type": ["null", "string"]
+      },
+      "nr_escalated": {
+        "type": ["null", "string"]
       }
   }
 }
