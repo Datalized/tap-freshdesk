@@ -28,17 +28,27 @@
         "format": "date-time"
       },
       "custom_fields": {
-        "type": ["null", "array", "object"],
-        "items": {
-          "type": ["null", "object"],
-          "properties": {
-            "name": {
-              "type": ["null", "string"]
-            },
-            "value": {
-              "type": ["null", "string"]
-            }
-          }
+        "type": ["null", "object"],
+        "properties": {
+          "estado_comercial": {"type": ["null", "string"]},
+          "csm": {"type": ["null", "string"]},
+          "segmento": {"type": ["null", "string"]},
+          "industria": {"type": ["null", "string"]},
+          "nps": {"type": ["null", "number"]},
+          "enterprise_id": {"type": ["null", "string"]},
+          "enterprise_token": {"type": ["null", "string"]},
+          "subdomain_9": {"type": ["null", "string"]},
+          "subdomain_8": {"type": ["null", "string"]},
+          "subdomain_7": {"type": ["null", "string"]},
+          "subdomain_6": {"type": ["null", "string"]},
+          "subdomain_5": {"type": ["null", "string"]},
+          "subdomain_4": {"type": ["null", "string"]},
+          "subdomain_3": {"type": ["null", "string"]},
+          "subdomain_2": {"type": ["null", "string"]},
+          "subdomain_1": {"type": ["null", "string"]},
+          "link_a_notion": {"type": ["null", "string"]},
+          "integracin": {"type": ["null", "string"]},
+          "country": {"type": ["null", "string"]}
         }
       },
       "health_score": {
