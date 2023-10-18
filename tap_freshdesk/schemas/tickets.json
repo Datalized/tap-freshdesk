@@ -349,30 +349,38 @@
         }
       },
       "stats": {
-        "type": [
-          "null",
-          "object"
-        ],
+        "type": ["null","object"],
         "properties": {
+          "agent_responded_at": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
+          "requester_responded_at": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
+          "status_updated_at": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
+          "reopened_at": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
+          "pending_since": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
           "closed_at": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "first_responded_at": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "resolved_at": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           }
         }
