@@ -29,10 +29,124 @@
             "type": [
                 "null",
                 "object"
-            ]
+            ],
+            "properties": {
+                "priority_4": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "respond_within": {
+                          "type": ["null", "integer"]
+                      },
+                      "resolve_within": {
+                        "type": ["null", "integer"]
+                      },
+                      "next_respond_within": {
+                        "type": ["null", "integer"]
+                      },
+                      "business_hours": {
+                        "type": ["null", "boolean"]
+                      },
+                      "escalation_enabled": {
+                        "type": ["null", "boolean"]
+                      }
+                    }
+                },
+                "priority_3": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "respond_within": {
+                        "type": ["null", "integer"]
+                    },
+                    "resolve_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "next_respond_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "business_hours": {
+                      "type": ["null", "boolean"]
+                    },
+                    "escalation_enabled": {
+                      "type": ["null", "boolean"]
+                    }
+                  }
+                },
+                "priority_2": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "respond_within": {
+                        "type": ["null", "integer"]
+                    },
+                    "resolve_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "next_respond_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "business_hours": {
+                      "type": ["null", "boolean"]
+                    },
+                    "escalation_enabled": {
+                      "type": ["null", "boolean"]
+                    }
+                  }
+                },
+                "priority_1": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "respond_within": {
+                        "type": ["null", "integer"]
+                    },
+                    "resolve_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "next_respond_within": {
+                      "type": ["null", "integer"]
+                    },
+                    "business_hours": {
+                      "type": ["null", "boolean"]
+                    },
+                    "escalation_enabled": {
+                      "type": ["null", "boolean"]
+                    }
+                  }
+                }
+            }
         },
         "applicable_to": {
-            "type": "object"
+            "type": ["null", "object"],
+            "properties": {
+              "company_ids": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "integer"]
+                }
+              },
+              "group_ids": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "integer"]
+                }
+              },
+              "sources": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "integer"]
+                }
+              },
+              "ticket_types": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "string"]
+                }
+              },
+              "product_ids": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "string"]
+                }
+              }
+            }
         },
         "is_default": {
             "type": [
@@ -59,6 +173,106 @@
                 "string"
             ], 
             "format": "date-time"
-        }
+        },
+        "escalation": {
+          "type": ["null", "object"],
+          "properties": {
+            "reminder_response": {
+              "type": ["null", "object"],
+              "properties": {
+                "escalation_time": {
+                  "type": ["null", "number"]
+                },
+                "agent_ids": {
+                  "type": ["null", "array"],
+                  "items": {
+                    "type": ["null", "number"]
+                  }
+                }
+              }
+            },
+            "reminder_resolution": {
+              "type": ["null", "object"]
+            },
+            "response": {
+              "type": ["null", "object"],
+              "properties": {
+                "escalation_time":{
+                  "type": ["null", "number"]
+                },
+                "agent_ids":{
+                  "type": ["null", "number"]
+                }
+              }
+            },
+            "resolution": {
+              "type": ["null", "object"],
+              "properties": {
+                "level_1": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "escalation_time":{
+                      "type": ["null", "number"]
+                    },
+                    "agent_ids":{
+                      "type": ["null", "array"],
+                      "items": {
+                        "type": ["null", "number"]
+                      }
+                    }
+                  }
+                },
+                "level_2": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "escalation_time":{
+                      "type": ["null", "number"]
+                    },
+                    "agent_ids":{
+                      "type": ["null", "array"],
+                      "items": {
+                        "type": ["null", "number"]
+                      }
+                    }
+                  }
+                },
+                "level_3": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "escalation_time":{
+                      "type": ["null", "number"]
+                    },
+                    "agent_ids":{
+                      "type": ["null", "array"],
+                      "items": {
+                        "type": ["null", "number"]
+                      }
+                    }
+                  }
+                },
+                "level_4": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "escalation_time":{
+                      "type": ["null", "number"]
+                    },
+                    "agent_ids":{
+                      "type": ["null", "array"],
+                      "items": {
+                        "type": ["null", "number"]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "reminder_next_response": {
+              "type": ["null", "object"]
+            },
+            "next_response": {
+              "type": ["null", "object"]
+            }
+          }
+      }
     }
 }
