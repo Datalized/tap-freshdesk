@@ -32,6 +32,25 @@ class GroupsStream(PagedFreshdeskStream):
 class ContactsStream(PagedFreshdeskStream):
     name = "contacts"
 
+    replication_key = 'updated_at'
+
+    def get_url_params(self, context, next_page_token):
+        """Return a dictionary of values to be used in URL parameterization.
+
+        Args:
+            context: The stream context.
+            next_page_token: The next page index or value.
+
+        Returns:
+            A dictionary of URL query parameters.
+        """
+        context = context or {}
+        params = super().get_url_params(context, next_page_token)
+        if '_updated_since' not in context:
+            params['_updated_since'] = self.get_starting_timestamp(context)
+        return params
+
+
 class EmailConfigsStream(PagedFreshdeskStream):
     name = "email_configs"
 
