@@ -46,6 +46,8 @@ class ContactsStream(PagedFreshdeskStream):
         """
         context = context or {}
         params = super().get_url_params(context, next_page_token)
+        # this endpoint has a diferent incremental params
+        params.pop('updated_since')
         if '_updated_since' not in context:
             params['_updated_since'] = self.get_starting_timestamp(context)
         return params
