@@ -201,7 +201,10 @@
                   "type": ["null", "number"]
                 },
                 "agent_ids":{
-                  "type": ["null", "number"]
+                  "type": ["null", "array"],
+                  "items":{
+                    "type": ["null", "number"]
+                  }
                 }
               }
             },
